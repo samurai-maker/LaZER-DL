@@ -55,8 +55,8 @@ async def status_message_f(
     aria_i_p = await aria_start()
     # Show All Downloads
     to_edit = await message.reply(".......")
-    chat_id = int(message.chat.id)
-    mess_id = int(to_edit.message_id)
+     chat_id=update.message.chat.id,
+        message_id=update.message.message_id
     async with _lock:
         if len(gid_dict[chat_id]) == 0:
             gid_dict[chat_id].append(mess_id)
