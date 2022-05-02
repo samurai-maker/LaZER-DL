@@ -3,7 +3,7 @@ aria2p==0.9.1
 hachoir
 Pillow
 pyrogram
-pyrogram==1.4.12
+pyrogram<=1.4.16
 tgcrypto
 youtube_dl
 hurry.filesize
